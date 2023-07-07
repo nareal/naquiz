@@ -64,7 +64,7 @@ Google
 
 ## Example
 
-Here is the source code with usage examples: [example.qmd](example.qmd).
+Here is the source code with usage examples: [example.qmd](example.qmd) and the [rendered HTML page](https://nareal.github.io/naquiz/example.html).
 
 
-Here is the source code for an example of usage with revealjs presentation: [example_presentation.qmd](example_presentation.qmd).
+Here is the source code for an example of usage with revealjs presentation: [example_presentation.qmd](example_presentation.qmd) and the [rendered HTML page](https://nareal.github.io/naquiz/example_presentation.html). 
