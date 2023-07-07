@@ -5,6 +5,7 @@ author: "Nelson Areal"
 format: revealjs
 filters:
   - naquiz
+self-contained: true
 ---
 
 ## A basic example
