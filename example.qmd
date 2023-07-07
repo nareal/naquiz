@@ -1,0 +1,157 @@
+---
+title: "Quiz example"
+subtitle: "Using the `naquiz` quarto extension"
+author: "Nelson Areal"
+format:
+  html:
+    toc: true
+filters:
+  - naquiz
+---
+
+This document illustrates the usage of the `naquiz` quarto extension. 
+
+The extension enables adding multiple choice questions when using HTML documents. It also adds [Alpine.js](https://alpinejs.dev/) javascript framework to the document.
+
+## A basic example
+
+:::::{.question}
+Bill Gates was the founder of:
+
+::::{.choices}
+
+:::{.choice}
+Apple
+:::  
+
+:::{.choice .correct-choice}
+Microsoft
+:::
+
+:::{.choice}
+Facebook  
+:::
+
+:::{.choice}
+Google   
+:::
+
+::::
+:::::
+
+
+## A quiz with a clear answer button
+
+:::::{.question}
+Bill Gates was the founder of:
+
+::::{.choices}
+
+:::{.choice}
+Apple
+:::  
+
+:::{.choice .correct-choice}
+Microsoft
+:::
+
+:::{.choice}
+Facebook  
+:::
+
+:::{.choice}
+Google   
+:::
+
+:::{.button-clear title="Clear answer" button-class="btn btn-light btn-xs"}
+:::
+
+::::
+:::::
+
+
+
+
+## A quiz with additional buttons
+
+:::::{.question}
+Bill Gates was the founder of:
+
+::::{.choices}
+
+:::{.choice}
+Apple
+:::  
+
+:::{.choice .correct-choice}
+Microsoft
+:::
+
+:::{.choice}
+Facebook  
+:::
+
+:::{.choice}
+Google   
+:::
+
+:::{.button-clear title="Clear answer" button-class="btn btn-light btn-xs"}
+:::
+
+::::
+:::::
+
+::::{.btn-group}
+:::{.button-hint title="Show hint" button-class="btn btn-warning btn-xs"}
+The company name starts with an 'M'...
+:::
+
+:::{.button-answer title="Show Answer" button-class="btn btn-info btn-xs"}
+Bill Gates and Paul Allen founded Microsoft on April 4, 1975.
+:::
+::::
+
+
+## A quiz with additional information in callouts
+
+:::::{.question}
+Bill Gates was the founder of:
+
+::::{.choices}
+
+:::{.choice}
+Apple
+:::  
+
+:::{.choice .correct-choice}
+Microsoft
+:::
+
+:::{.choice}
+Facebook  
+:::
+
+:::{.choice}
+Google   
+:::
+
+:::{.button-clear title="Clear answer" button-class="btn btn-light btn-xs"}
+:::
+
+::::
+:::::
+
+
+::: {.callout-tip collapse="true" icon="false"}
+## Hint
+
+The company name starts with an 'M'...
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Answer
+
+Bill Gates and Paul Allen founded Microsoft on April 4, 1975.
+:::
+
+

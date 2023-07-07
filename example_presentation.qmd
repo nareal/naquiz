@@ -1,0 +1,108 @@
+---
+title: "Quiz example"
+subtitle: "Using the `naquiz` quarto extension"
+author: "Nelson Areal"
+format: revealjs
+filters:
+  - naquiz
+---
+
+## A basic example
+
+:::::{.question}
+Bill Gates was the founder of:
+
+::::{.choices}
+
+:::{.choice}
+Apple
+:::  
+
+:::{.choice .correct-choice}
+Microsoft
+:::
+
+:::{.choice}
+Facebook  
+:::
+
+:::{.choice}
+Google   
+:::
+
+::::
+:::::
+
+
+## A quiz with a clear answer button
+
+:::::{.question}
+Bill Gates was the founder of:
+
+::::{.choices}
+
+:::{.choice}
+Apple
+:::  
+
+:::{.choice .correct-choice}
+Microsoft
+:::
+
+:::{.choice}
+Facebook  
+:::
+
+:::{.choice}
+Google   
+:::
+
+:::{.button-clear title="Clear answer" button-class="btn btn-light btn-xs"}
+:::
+
+::::
+:::::
+
+
+
+
+## A quiz with additional buttons
+
+:::::{.question}
+Bill Gates was the founder of:
+
+::::{.choices}
+
+:::{.choice}
+Apple
+:::  
+
+:::{.choice .correct-choice}
+Microsoft
+:::
+
+:::{.choice}
+Facebook  
+:::
+
+:::{.choice}
+Google   
+:::
+
+:::{.button-clear title="Clear answer" button-class=""}
+:::
+
+::::
+:::::
+
+
+:::{.button-hint title="Show hint" button-class=""}
+The company name starts with an 'M'...
+:::
+
+:::{.button-answer title="Show Answer" button-class=""}
+Bill Gates and Paul Allen founded Microsoft on April 4, 1975.
+:::
+
+
+
