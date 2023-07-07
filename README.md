@@ -4,7 +4,7 @@ The extension enables adding multiple choice questions when using a Quarto HTML 
 
 ## Installing
 
-To extension with the template do:
+To install the extension with the template do:
 
 ```bash
 quarto use template nareal/naquiz
