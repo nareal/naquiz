@@ -3,11 +3,11 @@
 local function button_clear(div, defaultTitle, defaultClass, borderColor)
   local beginDiv = ""
   local buttonClass = div.attr.attributes['button-class']
-  
+
   -- quarto.log.output("=== button-clear ===")
   -- quarto.log.output(div)
 
-  beginDiv = beginDiv .. "<button @click='clear()'"
+  beginDiv = beginDiv .. "<button x-on:click='clear()'"
   if buttonClass then
     beginDiv = beginDiv .. 'class=' .. "'" .. buttonClass .. "'" .. '>'
   else
@@ -32,7 +32,7 @@ local function button_clear(div, defaultTitle, defaultClass, borderColor)
 
   table.insert(div.content, pandoc.RawBlock('html', beginDiv))
   table.insert(div.content, pandoc.RawBlock('html', endDiv))
-  
+
   -- quarto.log.output("=== \n\n\n\n")
   -- quarto.log.output(div)
 
@@ -41,10 +41,9 @@ end
 
 
 local function button(div, defaultTitle, defaultClass, borderColor)
-  
   local beginDiv = "<div x-data='{ open: false }'>\n"
   local buttonClass = div.attr.attributes['button-class']
-  beginDiv = beginDiv .. "<button @click='open = ! open'"
+  beginDiv = beginDiv .. "<button x-on:click='open = ! open'"
   if buttonClass then
     beginDiv = beginDiv .. 'class=' .. "'" .. buttonClass .. "'" .. '>'
   else
@@ -61,44 +60,41 @@ local function button(div, defaultTitle, defaultClass, borderColor)
 
   if borderColor == nil then
     borderColor = "card card-body"
-  else 
+  else
     borderColor = "card card-body " .. borderColor
-  end 
+  end
 
-  beginDiv = beginDiv .. "<div x-show='open' x-transition.duration.200ms @click.outside='open = false' class='" ..
-  borderColor .. "'" .. ">"
+  beginDiv = beginDiv ..
+      "<div x-show='open' x-transition.duration.200ms x-on:click.outside='open = false' class='" ..
+      borderColor .. "'" .. ">"
   local endDiv = "</div>\n</div>\n"
 
   table.insert(div.content, 1, pandoc.RawBlock('html', beginDiv))
   table.insert(div.content, pandoc.RawBlock('html', endDiv))
   -- quarto.log.output(div)
   return div
-
 end
 
 
 local function choice(blocks, correct, idx)
-
-
   local htmlStart = ''
-  
+
   if correct == true then
-    htmlStart = htmlStart .. '<p><input class="form-check-input" type="radio" x-model="answer" value="correct"> <span id="correct" x-show="answer == $el.id" class="badge">&#10003;</span>'
-  else 
     htmlStart = htmlStart ..
-    '<p><input class="form-check-input" type="radio" x-model="answer" value="no' ..
+    '<p><input class="form-check-input" type="radio" x-model="answer" value="correct"> <span id="correct" x-show="answer == $el.id" class="badge">&#10003;</span>'
+  else
+    htmlStart = htmlStart ..
+        '<p><input class="form-check-input" type="radio" x-model="answer" value="no' ..
         idx .. '"> <span id="no' .. idx .. '" x-show="answer == $el.id" class="badge">&#10007;</span>'
   end
   table.insert(blocks[1].content, 1, pandoc.RawInline('html', htmlStart))
   table.insert(blocks[1].content, pandoc.RawInline('html', '</p>'))
 
   return blocks
-
 end
 
 
 local function choices(div)
-  
   local correct = false
   if div.tag == "Div" then
     if div.attr.classes:includes("choices") then
@@ -106,7 +102,7 @@ local function choices(div)
         if subDiv.attr.classes:includes("choice") then
           if subDiv.attr.classes:includes("correct-choice") then
             correct = true
-          else 
+          else
             correct = false
           end
           choice(subDiv.content, correct, idx)
@@ -117,8 +113,8 @@ local function choices(div)
           button_clear(subDiv, "Clear answer", "btn btn-light")
         end
       end
-      table.insert(div.content, 1, 
-      pandoc.RawBlock('html',
+      table.insert(div.content, 1,
+        pandoc.RawBlock('html',
           '<div x-data="{ answer: \'\' , clear() { this.answer = \'\' }}">\n'))
       table.insert(div.content, pandoc.RawBlock('html', '</div>\n'))
     end
@@ -128,7 +124,6 @@ end
 
 
 local function question(div)
-  
   for idx, blocks in ipairs(div) do
     if blocks.tag == "Div" then
       choices(blocks)
@@ -145,10 +140,11 @@ local function writeEnvironments(div)
     quarto.doc.add_html_dependency({
       name = "alpine",
       version = "3.12",
-      scripts = { "js/alpine@3.12.min.js" },
+      scripts = {
+        { path = "js/alpine@3.12.min.js", afterBody = "true" } },
       stylesheets = { "css/buttons.css" }
     })
-    if div.attr.classes:includes("question") then 
+    if div.attr.classes:includes("question") then
       -- quarto.log.output("=== question ===")
       -- quarto.log.output(div)
       div.content = question(div.content)
@@ -161,7 +157,7 @@ local function writeEnvironments(div)
       div = button(div, "Answer", "btn btn-info", "border-info")
       -- quarto.log.output("=== button-answer ===")
     end
-    return(div)
+    return (div)
   end
 end
 
