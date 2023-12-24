@@ -1,0 +1,8 @@
+---
+title: "naquiz"
+---
+
+Examples of usage of the [nareal/naquiz](https://github.com/nareal/naquiz) quarto extension:
+
+- [In an HTML document](example.qmd)
+- [In a revealjs presentation](example_presentation.qmd)
