@@ -2,6 +2,6 @@
 *.pdf
 *_files/
 /.luarc.json
-!docs/*.html
+docs/
 /.quarto/
 _quarto.yaml

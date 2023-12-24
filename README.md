@@ -1,5 +1,7 @@
 # naquiz extension for Quarto
 
+![GitHub Action Status](https://img.shields.io/github/actions/workflow/status/nareal/naquiz/publish.yml)
+
 The extension enables adding multiple choice questions when using a Quarto HTML documents or Quarto revealjs presentation. It also adds [Alpine.js](https://alpinejs.dev/) javascript framework to the document.
 
 ## Installing
@@ -72,6 +74,5 @@ Google
 ## Example
 
 Here is the source code with usage examples: [example.qmd](example.qmd) and the [rendered HTML page](https://nareal.github.io/naquiz/example.html).
-
 
 Here is the source code for an example of usage with revealjs presentation: [example_presentation.qmd](example_presentation.qmd) and the [rendered HTML page](https://nareal.github.io/naquiz/example_presentation.html). 
