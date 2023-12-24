@@ -2,3 +2,5 @@ docs/
 .github/
 .nojekyll
 index.qmd
+_site/
+_quarto.yml
