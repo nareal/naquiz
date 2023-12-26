@@ -1,33 +1,5 @@
 [
   {
-    "objectID": "example_presentation.html#a-basic-example",
-    "href": "example_presentation.html#a-basic-example",
-    "title": "Quiz example",
-    "section": "A basic example",
-    "text": "A basic example\n\nBill Gates was the founder of:\n\n\n\n\n ✗Apple\n\n\n ✓Microsoft\n\n\n ✗Facebook\n\n\n ✗Google"
-  },
-  {
-    "objectID": "example_presentation.html#a-quiz-with-a-clear-answer-button",
-    "href": "example_presentation.html#a-quiz-with-a-clear-answer-button",
-    "title": "Quiz example",
-    "section": "A quiz with a clear answer button",
-    "text": "A quiz with a clear answer button\n\nBill Gates was the founder of:\n\n\n\n\n ✗Apple\n\n\n ✓Microsoft\n\n\n ✗Facebook\n\n\n ✗Google\n\n\nClear answer"
-  },
-  {
-    "objectID": "example_presentation.html#a-quiz-with-additional-buttons",
-    "href": "example_presentation.html#a-quiz-with-additional-buttons",
-    "title": "Quiz example",
-    "section": "A quiz with additional buttons",
-    "text": "A quiz with additional buttons\n\nBill Gates was the founder of:\n\n\n\n\n ✗Apple\n\n\n ✓Microsoft\n\n\n ✗Facebook\n\n\n ✗Google\n\n\nClear answer\n\n\n\n\n\n\n\n\n\n\nShow hint\n\nThe company name starts with an ‘M’…\n\n\n\n\n\n\nShow Answer\n\nBill Gates and Paul Allen founded Microsoft on April 4, 1975."
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "naquiz",
-    "section": "",
-    "text": "Examples of usage of the nareal/naquiz quarto extension:\n\nIn an HTML document\nIn a revealjs presentation"
-  },
-  {
     "objectID": "example.html",
     "href": "example.html",
     "title": "Quiz example",
@@ -61,5 +33,33 @@
     "title": "Quiz example",
     "section": "A quiz with additional information in callouts",
     "text": "A quiz with additional information in callouts\n\nBill Gates was the founder of:\n\n\n\n\n ✗Apple\n\n\n ✓Microsoft\n\n\n ✗Facebook\n\n\n ✗Google\n\n\nClear answer\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHint\n\n\n\n\n\nThe company name starts with an ‘M’…\n\n\n\n\n\n\n\n\n\nAnswer\n\n\n\n\n\nBill Gates and Paul Allen founded Microsoft on April 4, 1975."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "naquiz quarto extension examples",
+    "section": "",
+    "text": "Examples of usage of the nareal/naquiz quarto extension:\n\nIn an HTML document\nIn a revealjs presentation"
+  },
+  {
+    "objectID": "example_presentation.html#a-basic-example",
+    "href": "example_presentation.html#a-basic-example",
+    "title": "Quiz example",
+    "section": "A basic example",
+    "text": "A basic example\n\nBill Gates was the founder of:\n\n\n\n\n ✗Apple\n\n\n ✓Microsoft\n\n\n ✗Facebook\n\n\n ✗Google"
+  },
+  {
+    "objectID": "example_presentation.html#a-quiz-with-a-clear-answer-button",
+    "href": "example_presentation.html#a-quiz-with-a-clear-answer-button",
+    "title": "Quiz example",
+    "section": "A quiz with a clear answer button",
+    "text": "A quiz with a clear answer button\n\nBill Gates was the founder of:\n\n\n\n\n ✗Apple\n\n\n ✓Microsoft\n\n\n ✗Facebook\n\n\n ✗Google\n\n\nClear answer"
+  },
+  {
+    "objectID": "example_presentation.html#a-quiz-with-additional-buttons",
+    "href": "example_presentation.html#a-quiz-with-additional-buttons",
+    "title": "Quiz example",
+    "section": "A quiz with additional buttons",
+    "text": "A quiz with additional buttons\n\nBill Gates was the founder of:\n\n\n\n\n ✗Apple\n\n\n ✓Microsoft\n\n\n ✗Facebook\n\n\n ✗Google\n\n\nClear answer\n\n\n\n\n\n\n\n\n\n\nShow hint\n\nThe company name starts with an ‘M’…\n\n\n\n\n\n\nShow Answer\n\nBill Gates and Paul Allen founded Microsoft on April 4, 1975."
   }
 ]

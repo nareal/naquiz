@@ -1,1 +1,1 @@
-Sitemap: https://nareal.github.io/naquiz/sitemap.xml
+Sitemap: https://github.com/nareal/naquiz/sitemap.xml
