@@ -1,7 +1,6 @@
 ---
-title: "naquiz quarto extension examples"
+title: "naquiz Quarto extension examples"
 ---
-
 
 Examples of usage of the [nareal/naquiz](https://github.com/nareal/naquiz) quarto extension:
 

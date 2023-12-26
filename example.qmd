@@ -7,7 +7,6 @@ format:
     toc: true
 filters:
   - naquiz
-self-contained: true
 ---
 
 This document illustrates the usage of the `naquiz` quarto extension. 
